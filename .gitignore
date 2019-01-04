@@ -26,7 +26,6 @@
 /nbdist/
 /.nb-gradle/
 
-https://github.com/lizz365/eureka-example.git
 consumer/target/
 provider/target/
 server/src/test/java/com/lizz/spring/
