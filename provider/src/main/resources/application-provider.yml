@@ -1,0 +1,11 @@
+eureka:
+  #生产者实例
+  instance:
+    #是否使用IP地址进行访问
+    prefer-ip-address: true
+    #生产者显示名
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+  client:
+    serviceUrl:
+      #注册服务集群
+      defaultZone: http://eureka:eureka2019@eureka-peer1:9991/eureka/

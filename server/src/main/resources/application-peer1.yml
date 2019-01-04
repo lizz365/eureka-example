@@ -1,0 +1,20 @@
+server:
+  port: 9991
+  servlet:
+    context-path: /
+eureka:
+  instance:
+    hostname: eureka-peer1
+  server:
+    #是否开启自我保护机制
+    enable-self-preservation: true
+    #无效节点清理:时间 ms
+    eviction-interval-timer-in-ms: 60000
+  client:
+    serviceUrl:
+      #server 集群
+      defaultZone: http://eureka:eureka2019@eureka-peer2:9992/eureka/,http://eureka:eureka2019@eureka-peer3:9993/eureka/
+    #是否获取注册信息
+    fetch-registry: false
+    #是否再eureka上进行注册
+    register-with-eureka: false

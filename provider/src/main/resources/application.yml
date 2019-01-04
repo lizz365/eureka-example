@@ -1,0 +1,16 @@
+server:
+  port: 8601
+  servlet:
+    context-path: /eureka-provider
+spring:
+  application:
+    name: eureka-provider
+  profiles:
+      include: provider
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic

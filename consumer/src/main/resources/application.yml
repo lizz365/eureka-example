@@ -1,0 +1,14 @@
+server:
+  port: 8602
+  servlet:
+    context-path: /eureka-consumer
+spring:
+  application:
+    name: eureka-consumer
+  profiles:
+      include: consumer
+remote:
+  maxTotalConnect: 0
+  maxConnectPerRoute: 200
+  connectTimeout: 5000
+  readTimeout: 10000

@@ -1,0 +1,17 @@
+server:
+  port: 9991
+  servlet:
+    context-path: /
+eureka:
+  instance:
+    hostname: eureka-dev
+  server:
+    #是否开启自我保护机制
+    enable-self-preservation: false
+    #无效节点清理时间
+    eviction-interval-timer-in-ms: 60000
+  client:
+    #是否获取注册信息
+    fetch-registry: false
+    #是否再eureka上进行注册
+    register-with-eureka: false

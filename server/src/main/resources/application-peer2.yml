@@ -1,0 +1,12 @@
+server:
+  port: 9992
+  servlet:
+    context-path: /
+eureka:
+  instance:
+    hostname: eureka-peer2
+  client:
+    serviceUrl:
+      defaultZone: http://eureka:eureka2019@eureka-peer1:9991/eureka/,http://eureka:eureka2019@eureka-peer3:9993/eureka/
+    fetch-registry: false
+    register-with-eureka: false

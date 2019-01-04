@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: eurekaServer
+  profiles:
+    include: peer1
+  security: #安全验证
+    user:
+      name: eureka
+      password: eureka2019
